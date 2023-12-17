@@ -1,0 +1,13 @@
+input {
+  box-sizing: border-box;
+  letter-spacing: 1px;
+
+  border: 1px solid var(--grey-color);
+  border-radius: 8px;
+  padding: 7px 14px 9px;
+  transition: 0.4s;
+}
+
+input:focus {
+  border: 1px solid var(--grey-color);
+}

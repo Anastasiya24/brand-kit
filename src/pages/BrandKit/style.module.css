@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  text-align: center;
+}
+
+h1, h2 {
+  font-size: 22px;
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+.brandKitName {
+  width: 250px;
+}
+
+hr {
+  border: none;
+  background-color: var(--grey-color);
+  height: 1px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {}
