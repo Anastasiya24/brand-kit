@@ -1,17 +1,29 @@
 .textarea {
   box-sizing: border-box;
   height: 80px;
-  width: 100%;
+  width: 400px;
   border: 1px solid var(--grey-color);
   resize: none;
   line-height: 19px;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 15px;
+  padding: 12px;
   border-radius: 10px;
+  outline: none;
+}
+
+textarea:focus {
+  border: 1px solid var(--primary-color);
 }
 
 .textarea::placeholder {
   color: var(--grey-color);
-  font-size: 17px;
+  font-size: 15px;
   line-height: 19px;
+}
+
+.textSize {
+  text-align: end;
+  margin-right: 0;
+  margin-top: 8px;
+  color: var(--grey-color);
 }

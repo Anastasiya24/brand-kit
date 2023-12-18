@@ -25,7 +25,7 @@ const BrandKit = () => {
       children: <EmptySection />,
     },
   ];
-  const [brandKitName, setBrandKitName] = useState('')
+  const [brandKitName, setBrandKitName] = useState('My brand kit')
   return (
     <div>
       <div className={styles.header}>
@@ -33,7 +33,7 @@ const BrandKit = () => {
         <Input className={styles.brandKitName} value={brandKitName} onChange={e => setBrandKitName(e.target.value)} />
       </div>
       <VerticalMenu items={items} />
-      <hr />
+      <hr className={styles.hr} />
       <Button text="Save" onClick={() => {}} />
     </div>
   );

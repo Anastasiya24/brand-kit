@@ -2,33 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './style.module.css';
 
-const Dropdown = ({ value, onChange, placeholder, handleEnterKey }) => {
+const Dropdown = ({ value, items, onChange }) => {
   return (
-    <div className={styles.wrapper}>
-      <input
-        className={styles.effect}
-        type="text"
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-      />
-      <span className={styles.border}>
-        <i />
-      </span>
-    </div>
+    <select className={styles.select} onChange={onChange}>
+      {items.map((item) => (
+        <option selected={item === value}>{item}</option>
+      ))}
+    </select>
   );
 };
 
 Dropdown.propTypes = {
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-  placeholder: PropTypes.string,
-  handleEnterKey: PropTypes.func,
-};
-
-Dropdown.defaultProps = {
-  placeholder: '',
-  handleEnterKey: null,
+  items: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  value: PropTypes.string,
+  onChange: PropTypes.func
 };
 
 export default Dropdown;

@@ -1,19 +1,25 @@
-.item {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.select {
+  font-weight: 700;
+  padding: 8px 12px;
+  width: 200px;
+  border: 1px solid var(--grey-color);
+  border-radius: 7px;
 }
 
-.icon {
-  margin-left: 15px;
-  width: 25px;
+.select::-ms-expand {
+  display: none;
 }
 
-.default {
-  filter: invert(48%) sepia(61%) saturate(6951%) hue-rotate(8deg) brightness(105%) contrast(110%);
+.select:hover {
+  border-color: #888;
 }
 
-.item:hover .default {
-  filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(321deg) brightness(110%) contrast(1010%);
+.select:focus {
+  border-color: #aaa;
+  color: #222;
+  outline: none;
+}
+
+.select option {
+  font-weight: normal;
 }

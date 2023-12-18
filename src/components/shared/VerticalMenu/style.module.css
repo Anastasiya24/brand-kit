@@ -6,11 +6,11 @@
   display: flex;
   flex-direction: column;
   width: 200px;
-  padding: 10px;
+  padding-right: 10px;
 }
 
 .menuItem {
-  padding: 8px;
+  padding: 12px 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-left: 2px solid var(--grey-color);
@@ -24,5 +24,5 @@
 
 .menuContent {
   width: 100%;
-  padding: 20px;
+  padding: 0 0 20px 20px;
 }

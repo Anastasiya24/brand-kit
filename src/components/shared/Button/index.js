@@ -10,7 +10,7 @@ const Button = ({ invalid, text, onClick, className }) => {
         if (!invalid) onClick();
       }}
     >
-      <p>{text}</p>
+      <span>{text}</span>
     </button>
   );
 };
