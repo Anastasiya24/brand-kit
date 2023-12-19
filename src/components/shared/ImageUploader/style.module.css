@@ -1,0 +1,19 @@
+.image {
+  max-width: 100%;
+  max-height: 250px;
+}
+
+.inputFile {
+  display: none;
+}
+
+.customFileUpload {
+  display: inline-block;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+}

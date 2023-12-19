@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './style.module.css';
 
-const Input = ({ value, onChange, placeholder, className }) => {
+const Input = ({ value, onChange, placeholder }) => {
   return (
     <input
-      className={styles[className]}
       type='text'
-      placeholder={placeholder}
       value={value}
       onChange={onChange}
+      className={styles.input}
+      placeholder={placeholder}
     />
   );
 };
@@ -17,13 +17,11 @@ const Input = ({ value, onChange, placeholder, className }) => {
 Input.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  placeholder: PropTypes.string,
-  className: PropTypes.string,
+  placeholder: PropTypes.string
 };
 
 Input.defaultProps = {
-  placeholder: '',
-  className: ''
+  placeholder: ''
 };
 
 export default Input;

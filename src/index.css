@@ -1,19 +1,8 @@
 @import 'assets/theme/default.css';
 
-
-@font-face {
-  font-family: 'NotoSansTC Light';
-  src: url('assets/fonts/NotoSansTC-Light.otf');
-}
-
 @font-face {
   font-family: 'NotoSansTC Regular';
   src: url('assets/fonts/NotoSansTC-Regular.otf');
-}
-
-@font-face {
-  font-family: 'NotoSansTC Bold';
-  src: url('assets/fonts/NotoSansTC-Black.otf');
 }
 
 /* styles reset */

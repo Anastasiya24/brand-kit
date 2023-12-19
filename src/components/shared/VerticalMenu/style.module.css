@@ -16,8 +16,6 @@
   border-left: 2px solid var(--grey-color);
 }
 
-.menuItem:hover {}
-
 .activeItem {
   border-left: 2px solid var(--primary-color);
 }

@@ -1,4 +1,4 @@
-.wrapper {
+.button {
   cursor: pointer;
   background-color: var(--primary-color);
   border-radius: 4px;
@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.wrapper:hover {
+.button:hover {
   background-color: var(--dark-color);
   transition: 300ms linear;
 }
