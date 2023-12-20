@@ -1,8 +1,11 @@
+import { AppContextProvider } from './Context.js';
 import BrandKit from 'pages/BrandKit';
 
 function App() {
   return (
-    <BrandKit />
+    <AppContextProvider>
+      <BrandKit />
+    </AppContextProvider>
   );
 }
 

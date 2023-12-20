@@ -26,4 +26,11 @@ textarea:focus {
   margin-right: 0;
   margin-top: 8px;
   color: var(--grey-color);
+  width: 400px;
+}
+
+@media (max-width: 620px) {
+  .textarea, .textSize {
+    width: 200px;
+  }
 }

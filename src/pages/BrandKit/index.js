@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import { getVideo } from 'services/api';
+import { useAppContext } from '../../Context.js';
 
 import VerticalMenu from 'components/shared/VerticalMenu';
 import Input from 'components/shared/Input';
@@ -31,6 +32,8 @@ const items = [
 
 const BrandKit = () => {
   const [brandKitName, setBrandKitName] = useState('My brand kit')
+  const { image } = useAppContext();
+
   return (
     <div>
       <div className={styles.header}>
@@ -39,7 +42,7 @@ const BrandKit = () => {
       </div>
       <VerticalMenu items={items} />
       <hr className={styles.hr} />
-      <Button text="Save" onClick={() => getVideo()} />
+      <Button text="Save" onClick={() => getVideo(image)} />
     </div>
   );
 };
