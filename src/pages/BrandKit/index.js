@@ -7,7 +7,7 @@ import VerticalMenu from 'components/shared/VerticalMenu';
 import Input from 'components/shared/Input';
 import Button from 'components/shared/Button';
 import EmptySection from '../../components/shared/EmptySection';
-import OutroSection from './OutroSection';
+import OutroSection from './components/OutroSection.js';
 import styles from './style.module.css';
 
 

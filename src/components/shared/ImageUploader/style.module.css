@@ -9,6 +9,7 @@
 
 .customFileUpload {
   display: inline-block;
+  background-color: #fff;
   width: 200px;
   box-sizing: border-box;
   padding: 10px 20px;

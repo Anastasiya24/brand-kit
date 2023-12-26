@@ -10,12 +10,6 @@
   padding-right: 20px;
 }
 
-.sectionTitle {
-  font-size: 21px;
-  font-weight: 700;
-  margin-bottom: 40px;
-}
-
 .brandKitName {
   width: 250px;
 }
@@ -25,27 +19,4 @@
   background-color: var(--grey-color);
   height: 1px;
   margin-bottom: 20px;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 10px;
-}
-
-p {
-  white-space: nowrap;
-  margin-right: 15px;
-}
-
-@media (max-width: 720px) {
-  .row {
-    flex-direction: column;
-    justify-content: left;
-    padding-bottom: 10px;
-  }
-
-  p {
-    margin-bottom: 15px;
-  }
 }
